@@ -10,9 +10,6 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
-import javafx.scene.paint.Color;
-import javafx.scene.text.Font;
-import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -36,9 +33,11 @@ public class LoginFormWithCss extends Application {
 
     Scene scene = new Scene(gridPane, 350, 275);
     primaryStage.setScene(scene);
+    String css = LoginFormWithCss.class.getResource("/style.css").toExternalForm();
+    scene.getStylesheets().add(css);
 
     Text sceneTitle = new Text("Welcome");
-    sceneTitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
+    sceneTitle.setId("welcome-text");
     gridPane.add(sceneTitle, 0, 0, 2, 1);
 
     Label userName = new Label("User Name");
@@ -63,7 +62,7 @@ public class LoginFormWithCss extends Application {
     gridPane.add(actionTarget, 1, 6);
 
     signInButton.setOnAction(event -> {
-      actionTarget.setFill((Color.FIREBRICK));
+      actionTarget.setId("actiontarget");
       actionTarget.setText("Sign in button pressed");
     });
 
