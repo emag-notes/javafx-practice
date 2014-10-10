@@ -33,6 +33,7 @@
   <modules>
     <module>helloworld</module>
     <module>loginform</module>
+    <module>loginformwithcss</module>
   </modules>
 
 </project>
