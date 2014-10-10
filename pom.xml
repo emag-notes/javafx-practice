@@ -14,19 +14,6 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.12-beta-2</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
-
-  <modules>
-    <module>helloworld</module>
-  </modules>
-
   <build>
     <finalName>${artifactId}</finalName>
     <pluginManagement>
@@ -42,5 +29,10 @@
       </plugins>
     </pluginManagement>
   </build>
+
+  <modules>
+    <module>helloworld</module>
+    <module>loginform</module>
+  </modules>
 
 </project>
