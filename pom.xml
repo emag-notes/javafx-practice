@@ -34,6 +34,7 @@
     <module>helloworld</module>
     <module>loginform</module>
     <module>loginformwithcss</module>
+    <module>loginformwithfxml</module>
   </modules>
 
 </project>
