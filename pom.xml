@@ -35,6 +35,7 @@
     <module>loginform</module>
     <module>loginformwithcss</module>
     <module>loginformwithfxml</module>
+    <module>animation</module>
   </modules>
 
 </project>
